@@ -1,21 +1,21 @@
-
 import './App.css';
-import app from './firebase.init';
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
-const auth = getAuth(app);
+import { Route, Routes } from 'react-router-dom';
+import Home from './Home/Home'
+
+
 
 function App() {
-  const provider = new GoogleAuthProvider();
 
-  const handleGoogleSignIn = () =>{
-    console.log('clicked')
-  }
+
   return (
     <div className="App">
-        <button onClick={handleGoogleSignIn}>
-          Google Sign In
-          </button>    
+      <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+      </Routes>
+      <ToastContainer/>
     </div>
   );
 }
