@@ -8,12 +8,11 @@ const Navbar = () => {
   
 
     const menuItems = <>
-        <li className='text-xl'><Link to='/'>Home</Link></li>
-        <li className='text-xl'><Link to='/protfolio'>Protfolio</Link></li>
-        <li className='text-xl'><Link to='/blog'>Blog</Link></li>
-        <li className='text-xl'><Link to='/contract'>Contract</Link></li>
-        <li className='text-xl'><Link to='/about'>About</Link></li>
-       <li className='text-xl'><Link to='/dashboard'>Dashboard</Link></li>
+        <li className='text-xl text-white'><Link to='/'>Home</Link></li>
+        <li className='text-xl text-white'><Link to='/products'>Products</Link></li>
+        <li className='text-xl text-white'><Link to='/contract'>Contract</Link></li>
+        <li className='text-xl text-white'><Link to='/about'>About</Link></li>
+       <li className='text-xl text-white'><Link to='/dashboard'>Dashboard</Link></li>
 
     </>
     return (
@@ -29,7 +28,7 @@ const Navbar = () => {
 
                         </ul>
                     </div>
-                    <li className="btn btn-ghost text-accent normal-case text-5xl"><Link to='/'>P_Commerce</Link></li>
+                    <li className="btn btn-ghost text-accent normal-case text-3xl font-extrabold"><Link to='/'>P_Commerce</Link></li>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
@@ -38,7 +37,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                   <li  className="btn"><Link to='/login'>login</Link></li>
+                   <li  className="btn text-white"><Link to='/login'>login</Link></li>
                 </div>
             </div>
 
